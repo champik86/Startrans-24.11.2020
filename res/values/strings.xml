@@ -4,7 +4,7 @@
     <string name="mainActivity">Личный Кабинет</string>
     <string name="registerActivity">Регистрация</string>
     <string name="title_activity_maps">Map</string>
-    <string name="api_key">AIzaSyDsc1BDghFZ7hLhMRGKUz20O6BKC9tj-CE</string>
+    <string name="api_key">**************************</string>
     <string name="tvRegister"><u>ЗАРЕГИСТРИРОВАТЬСЯ</u></string>
     <string name="tvForgotPassword"><u>ЗАБЫЛИ ПАРОЛЬ?</u></string>
     <string name="loginStartrans">STARTRANS</string>
