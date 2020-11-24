@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/countThePrice"
+        android:title="Просчитать стоимость"
+        android:icon="@drawable/contacts"/>
+    <item android:id="@+id/info"
+        android:title="Контакты"
+        android:icon="@drawable/contacts"
+        app:showAsAction="never"/>
+    <item android:id="@+id/priceList"
+        android:title="Прайслист"/>
+    <item android:id="@+id/logout"
+        android:title="Выйти из аккаунта"/>
+</menu>

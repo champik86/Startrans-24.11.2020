@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnDate"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundedbutton"
+                android:padding="2dp"
+                android:textColor="@color/btnText"
+                android:focusable="true"
+                android:hint="@string/orderBtnDate"
+                android:textColorHint="@android:color/white"
+                android:textSize="16sp"/>
+            <Button
+                android:id="@+id/btnTime"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundedbutton"
+                android:padding="2dp"
+                android:textColor="@color/btnText"
+                android:focusable="true"
+                android:hint="@string/orderBtnTime"
+                android:textColorHint="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="2dp"/>
+
+
+
+        <EditText
+            android:id="@+id/etFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/orderEtFrom"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:textColorHint="@drawable/selector"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/orderTo"
+            android:inputType="textPersonName"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:textColorHint="@drawable/selector"
+            tools:ignore="Autofill" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/orderTvVehicleType"
+        android:textColor="@color/text"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spVehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@android:drawable/btn_dropdown"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/orderTvWeight"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/orderTvTones"
+            android:textColor="@color/text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/orderTvSize"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/etSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/orderTvMeters"
+            android:textColor="@color/text"/>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAdditional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orderTvAdds"
+            android:gravity="center"
+            android:textColor="@color/text"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/etAdds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textColor="@color/text"
+            tools:ignore="Autofill,LabelFor" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSendOrder"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/orderBtnSendOrder"
+        android:textColor="@color/btnText"
+        android:textSize="16sp"/>
+</LinearLayout>

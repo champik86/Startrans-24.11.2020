@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoTvPhone"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/tvPhone1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/infoTvPhone1"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:onClick="call1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/viber_logo"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPhone2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/infoTvPhone2"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:onClick="call2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoTvEmailHead"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/infoTvEmail"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:onClick="copyEmail"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:id="@+id/btnFacebook"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/facebook1"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+        android:onClick="facebook"
+        tools:ignore="ContentDescription" />
+
+
+</LinearLayout>
