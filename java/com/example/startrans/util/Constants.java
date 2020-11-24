@@ -8,7 +8,7 @@ public class Constants {
 
     //gmail
     public static final String EMAIL = "startransmailsender@gmail.com";
-    public static final String PASSWORD = "startrans100686";
+    public static final String PASSWORD = "**************";
 
     public static final String PREFERENCES_SETTINGS = "settings";
     public static final String IS_USER = "is_user";
